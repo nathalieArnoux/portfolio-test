@@ -3,6 +3,23 @@ Définition de variables Sass, par exemple :
 $color: #282c34;
 */
 
+// Media queries breakpoints
 $phone-bp: 480px;
 $tablet-bp: 768px;
-$dektop-bp: 1024px;
+$desktop-bp: 1024px;
+
+// Color palettes
+$bg-colors1: (
+  primary: #756ab6,
+  secondary: #ac87c5,
+  tertiary: #e0aed0,
+  accent: #ffe5e5,
+);
+
+$bg-colors2: (
+  primary: #4c6d9f,
+  secondary: #99ced5,
+  tertiary: #304e7a,
+  quaternary: #6d7474,
+  accent: #efb6b5,
+);

@@ -1,4 +1,4 @@
-@import 'src/styles/variables';
+//@use 'src/styles/variables' as v;
 
 .Header {
   display: flex;
@@ -9,14 +9,7 @@
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #000;
   z-index: 100;
-
-  &_logo,
-  &_list {
-    display: flex;
-    align-items: center;
-  }
 
   &_logo {
     font-style: italic;
@@ -26,11 +19,22 @@
     padding-left: 10px;
   }
 
-  &_list {
-    flex-grow: 0.6;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    column-gap: 5px;
-    margin: 0 auto;
+  &_logo,
+  &-nav_list {
+    display: flex;
+    align-items: center;
   }
+
+  &-nav {
+      flex-grow: 0.6;
+      margin: 0 auto;
+
+    &_list {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      column-gap: 5px;
+
+    }
+  }
+
 }
