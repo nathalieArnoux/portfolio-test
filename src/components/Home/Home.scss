@@ -1,0 +1,18 @@
+@import 'src/styles/variables';
+
+.Home {
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: $phone-bp) and (max-width: $tablet-bp) {
+    max-width: 85%;
+  }
+
+  @media screen and (min-width: $tablet-bp) {
+    max-width: 75%;
+  }
+
+  &-content {
+    background-color: rgb(105, 7, 97);
+  }
+}

@@ -1,0 +1,23 @@
+@use 'reset';
+@use 'variables' as v;
+
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #fff;
+
+	//TODO: suppress when finalizing
+	background-color: rgb(52, 21, 56);
+
+	h1 {
+		font-family: "Oleo Script", system-ui;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 30px;
+	}
+}
