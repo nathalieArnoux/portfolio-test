@@ -15,7 +15,8 @@ body {
 	background-color: map-get(v.$bg-colors2, primary);
 
 
-	h1 {
+	h1,
+	h2 {
 		font-family: "Oleo Script", system-ui;
 		font-weight: 400;
 		font-style: normal;

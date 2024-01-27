@@ -1,5 +1,5 @@
 import './Home.scss';
-import Banner from '../Templates/Banner/Banner';
+import Banner from './Banner/Banner';
 
 function Home() {
   return (
