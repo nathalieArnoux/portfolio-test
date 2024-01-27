@@ -12,12 +12,19 @@ body {
 	color: #fff;
 
 	//TODO: suppress when finalizing
-	background-color: rgb(52, 21, 56);
+	background-color: map-get(v.$bg-colors2, primary);
 
-	h1 {
+
+	h1,
+	h2 {
 		font-family: "Oleo Script", system-ui;
 		font-weight: 400;
 		font-style: normal;
 		font-size: 30px;
+	}
+
+	header,
+	footer {
+		background-color: map-get(v.$bg-colors2, tertiary);
 	}
 }
