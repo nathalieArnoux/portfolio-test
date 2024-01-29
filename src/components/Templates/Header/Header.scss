@@ -11,15 +11,17 @@
   top: 0;
   z-index: 100;
 
-  &_logo {
-    font-style: italic;
-    font-weight: 700;
-    max-width: auto;
+  &-logo {
     height: 85%;
+
+    &_img {
+    max-width: auto;
+    height: 100%;
     padding-left: 10px;
+    }
   }
 
-  &_logo,
+  &-logo,
   &-nav_list {
     display: flex;
     align-items: center;

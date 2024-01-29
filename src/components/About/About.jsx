@@ -1,7 +1,7 @@
 import './About.scss';
 
 const About = () => {
-  return <p>heyyy</p>;
+  return <p>About</p>;
 };
 
 export default About;

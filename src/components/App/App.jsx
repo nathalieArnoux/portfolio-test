@@ -1,9 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
-import logo from '../../assets/logo.svg';
+// import logo from '../../assets/logo.svg';
 import './App.scss';
 import Header from '../Templates/Header/Header';
 import Footer from '../Templates/Footer/Footer';
 import Home from '../Home/Home';
+import About from '../About/About';
+import Resume from '../Resume/Resume';
+import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
+import Error404 from '../Error404/Error404';
 
 function App() {
   return (
@@ -22,7 +27,14 @@ Learn React
 </a> */}
       <Header />
       <main>
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
       </main>
       <Footer />
     </div>
