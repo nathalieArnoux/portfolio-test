@@ -28,15 +28,44 @@
   }
 
   &-nav {
-      flex-grow: 0.6;
-      margin: 0 auto;
+    flex-grow: 0.6;
+    margin: 0 auto;
 
     &_list {
       flex-wrap: wrap;
       justify-content: space-around;
       column-gap: 5px;
-
+      font-family: 'Oleo Script', system-ui;
+      font-size: 35px;
     }
   }
 
+  &-nav.mobile {
+    margin: 0 10px;
+  }
+}
+
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  .hamburger-button {
+    height: 100%;
+    width: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+
+    span {
+      height: 100%;
+      width: 100%;
+
+      i {
+        font-size: 40px;
+      }
+    }
+  }
 }

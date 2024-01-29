@@ -10,12 +10,12 @@
 
   &-img {
     object-fit: cover;
-    max-height: 92vh;
     width: 100%;
+    height: 92vh;
 
-    @media screen and (max-width: v.$tablet-bp) {
+/*     @media screen and (max-width: v.$tablet-bp) {
       height: 92vh;
-    }
+    } */
   }
 
   &-title {
