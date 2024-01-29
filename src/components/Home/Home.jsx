@@ -1,7 +1,7 @@
 import './Home.scss';
 import Banner from './Banner/Banner';
 
-function Home() {
+const Home = () => {
   return (
     <>
       <Banner />
@@ -45,6 +45,6 @@ function Home() {
       </div>
     </>
   );
-}
+};
 
 export default Home;
