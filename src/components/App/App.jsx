@@ -8,6 +8,7 @@ import About from '../About/About';
 import Resume from '../Resume/Resume';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
+import Error404 from '../Error404/Error404';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ Learn React
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </main>
       <Footer />
