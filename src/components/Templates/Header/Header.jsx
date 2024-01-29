@@ -3,6 +3,28 @@ import { NavLink } from 'react-router-dom';
 import { isMobileOnly } from 'react-device-detect';
 import { useState } from 'react';
 
+const Links = () => {
+  return (
+    <>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/resume">Resume</NavLink>
+      </li>
+      <li>
+        <NavLink to="/projects">Projects</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">Contact</NavLink>
+      </li>
+    </>
+  );
+};
+
 const HamburgerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,9 +41,7 @@ const HamburgerMenu = () => {
       </button>
       {menuOpen && (
         <ul className="menu-items">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <Links />
         </ul>
       )}
     </div>
@@ -41,21 +61,7 @@ const Header = () => {
       <nav className={`Header-nav ${isMobileOnly ? 'mobile' : ''}`}>
         {!isMobileOnly ? (
           <ul className="Header-nav_list">
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/resume">Resume</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
+            <Links />
           </ul>
         ) : (
           <HamburgerMenu />
