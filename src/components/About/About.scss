@@ -1,0 +1,9 @@
+.About {
+  // pushes title down, ifuse margin-top, it also pushes main element down
+  padding-top: 20vh;
+
+  // flex
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
