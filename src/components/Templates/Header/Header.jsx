@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { isMobileOnly } from 'react-device-detect';
 import { useState } from 'react';
 
+// list of navigation links, to avoid repetition
 const Links = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const Links = () => {
   );
 };
 
+// hamburger menu, to better display menu on smartphones
 const HamburgerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -35,9 +37,7 @@ const HamburgerMenu = () => {
   return (
     <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`}>
       <button className="hamburger-button" type="button" onClick={toggleMenu}>
-        <span>
-          <i className="ri-menu-line" />
-        </span>
+        <i className="ri-menu-line" />
       </button>
       {menuOpen && (
         <ul className="menu-items">
@@ -48,6 +48,7 @@ const HamburgerMenu = () => {
   );
 };
 
+// whole header, containing logo and nav links / nav menu
 const Header = () => {
   return (
     <header className="Header">
