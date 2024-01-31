@@ -1,5 +1,6 @@
-//@use 'src/styles/variables' as v;
+@use 'src/styles/variables' as v;
 
+//basic header for tablet and desktop
 .Header {
   display: flex;
   width: 100%;
@@ -13,18 +14,14 @@
 
   &-logo {
     height: 85%;
-
-    &_img {
-    max-width: auto;
-    height: 100%;
-    padding-left: 10px;
-    }
-  }
-
-  &-logo,
-  &-nav_list {
     display: flex;
     align-items: center;
+
+    &_img {
+      max-width: auto;
+      height: 100%;
+      padding-left: 10px;
+    }
   }
 
   &-nav {
@@ -32,40 +29,71 @@
     margin: 0 auto;
 
     &_list {
+      display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       column-gap: 5px;
       font-family: 'Oleo Script', system-ui;
-      font-size: 35px;
-    }
-  }
+      font-size: min(3.5vh, 35px);
+      max-height: 100%;
 
-  &-nav.mobile {
-    margin: 0 10px;
+      li {
+        display: inline;
+        padding: 0;
+        text-transform: capitalize;
+      }
+    }
+
+    &.mobile {
+      margin: 0;
+      flex-grow: 0;
+    }
   }
 }
 
+// hamburger menu for phones
 .hamburger-menu {
-  display: flex;
-  justify-content: flex-end;
+  padding-right: 10px;
+  //GPT
+  position: relative;
+  display: inline-block;
+
   .hamburger-button {
-    height: 100%;
-    width: auto;
-    color: white;
+    // center the icon inside the button
     display: flex;
     align-items: center;
     justify-content: center;
+    // design
+    height: 100%;
+    width: auto;
+    color: white;
     background: none;
     border: none;
     padding: 0;
 
-    span {
-      height: 100%;
-      width: 100%;
+    i {
+      // change icon size
+      font-size: 5.5vh;
+    }
+  }
 
-      i {
-        font-size: 40px;
-      }
+  .menu-items {
+    // GPT
+    //display: none;
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    width: 100vw;
+    background-color: map-get(v.$bg-colors2, tertiary);
+    z-index: 1000;
+
+    li {
+      display: block;
+      padding: 10px;
+      font-family: 'Oleo Script', system-ui;
+      font-size: 25px;
+      text-decoration: none;
+      text-transform: capitalize;
     }
   }
 }
