@@ -24,23 +24,31 @@
     }
   }
 
-  /*   &-nav {
+  &-nav {
     flex-grow: 0.6;
     margin: 0 auto;
 
     &_list {
+      display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       column-gap: 5px;
       font-family: 'Oleo Script', system-ui;
-      font-size: 35px;
+      font-size: min(3.5vh, 35px);
+      max-height: 100%;
+
+      li {
+        display: inline;
+        padding: 0;
+        text-transform: capitalize;
+      }
     }
 
-        &.mobile {
-      // cancel margins on mobile display so menu icon is in the right corner
-      margin-right: 10px;
+    &.mobile {
+      margin: 0;
+      flex-grow: 0;
     }
-  } */
+  }
 }
 
 // hamburger menu for phones
@@ -63,7 +71,7 @@
     border: none;
     padding: 0;
 
-    i.ri-menu-line {
+    i {
       // change icon size
       font-size: 5.5vh;
     }
@@ -75,7 +83,7 @@
     position: absolute;
     top: 7vh;
     right: 0;
-    width: 200px;
+    width: 100vw;
     background-color: map-get(v.$bg-colors2, tertiary);
     z-index: 1000;
 
@@ -85,6 +93,7 @@
       font-family: 'Oleo Script', system-ui;
       font-size: 25px;
       text-decoration: none;
+      text-transform: capitalize;
     }
   }
 }
