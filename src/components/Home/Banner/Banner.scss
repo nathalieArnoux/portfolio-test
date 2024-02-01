@@ -22,20 +22,77 @@
     position: absolute;
     max-width: 80%;
 
-    &_hello,
-    &_intro {
+    &_hello {
+      margin-bottom: 3vh;
       font-size: min(20vw, 80px);
     }
 
-    &_hello {
-      padding-bottom: 3vh;
+    &_name {
+      color: map-get(v.$bg-colors2, accent);
     }
 
-    &_name {
+    &_sub {
+      margin-bottom: 2vh;
+    }
+
+    &_star {
+      font-size: min(18vw, 50px);
       color: map-get(v.$bg-colors2, secondary);
     }
-    &_star {
+
+    &_intro {
+      font-size: min(18vw, 50px);
+      margin-bottom: 9vh;
+    }
+
+    &_dev {
       color: map-get(v.$bg-colors2, accent);
+    }
+
+    &_portfolio {
+      color: map-get(v.$bg-colors2, secondary);
+    }
+
+    /*     &_button {
+      background-color: map-get(v.$bg-colors2, accent);
+      padding: 20px;
+      border-radius: 38% 62% 16% 84% / 53% 27% 73% 47%;
+      font-family: "Oleo Script", system-ui;
+      font-size: min(18vw, 30px);
+    } */
+
+    /* CSS */
+    .Banner-title_button {
+      font-family: "Oleo Script", system-ui;
+      font-size: min(18vw, 30px);
+      padding: 15px 30px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      border-radius: 30px;
+      // display: inline;
+      border: 0px;
+      font-weight: 700;
+      box-shadow: 0px 0px 14px -7px #0F1878;
+      background-image: linear-gradient(to right bottom, #2bc5d9, #009dcd, #0073bd, #0049a1, #0f1878);
+      /* background-image: linear-gradient(
+        45deg,
+        #ff512f 0%,
+        #f09819 51%,
+        #ff512f 100%
+      ); */
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    .Banner-title_button:hover {
+      background-position: right center;
+    }
+
+    .Banner-title_button:active {
+      transform: scale(0.95);
     }
   }
 }
