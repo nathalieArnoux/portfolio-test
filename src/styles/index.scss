@@ -23,6 +23,13 @@ body {
 		font-size: 30px;
 	}
 
+	h3 {
+		font-family: "Signika", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 30px;
+	}
+
 	header,
 	footer {
 		background-color: map-get(v.$bg-colors2, tertiary);
