@@ -13,7 +13,7 @@
     width: 100%;
     height: 92vh;
 
-/*     @media screen and (max-width: v.$tablet-bp) {
+    /*     @media screen and (max-width: v.$tablet-bp) {
       height: 92vh;
     } */
   }
@@ -24,7 +24,7 @@
 
     &_hello {
       margin-bottom: 3vh;
-      font-size: min(20vw, 80px);
+      font-size: max(5vw, 65px);
     }
 
     &_name {
@@ -36,12 +36,12 @@
     }
 
     &_star {
-      font-size: min(18vw, 50px);
+      font-size: max(2.5vw, 50px);
       color: map-get(v.$bg-colors2, secondary);
     }
 
     &_intro {
-      font-size: min(18vw, 50px);
+      font-size: max(2.5vw, 45px);
       margin-bottom: 9vh;
     }
 
@@ -63,8 +63,8 @@
 
     /* CSS */
     .Banner-title_button {
-      font-family: "Oleo Script", system-ui;
-      font-size: min(18vw, 30px);
+      font-family: 'Oleo Script', system-ui;
+      font-size: max(1.5vw, 30px);
       padding: 15px 30px;
       text-align: center;
       transition: 0.5s;
@@ -73,26 +73,23 @@
       // display: inline;
       border: 0px;
       font-weight: 700;
-      box-shadow: 0px 0px 14px -7px #0F1878;
-      background-image: linear-gradient(to right bottom, #2bc5d9, #009dcd, #0073bd, #0049a1, #0f1878);
-      /* background-image: linear-gradient(
-        45deg,
-        #ff512f 0%,
-        #f09819 51%,
-        #ff512f 100%
-      ); */
+      box-shadow: 0px 0px 14px -7px #000;
+      background-image: linear-gradient(
+        to right bottom,
+        #efb6b5,
+        #e19daf,
+        #ca86af,
+        #a775b3,
+        #756ab6
+      );
       cursor: pointer;
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-    }
 
-    .Banner-title_button:hover {
-      background-position: right center;
-    }
-
-    .Banner-title_button:active {
-      transform: scale(0.95);
+      &:hover {
+        background-position: right center;
+      }
     }
   }
 }
