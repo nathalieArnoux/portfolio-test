@@ -2,38 +2,88 @@
 @use 'variables' as v;
 
 body {
-	margin: 0;
-	font-family: "Montserrat", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	color: #fff;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-	//TODO: suppress when finalizing
-	background-color: map-get(v.$bg-colors2, primary);
+  //TODO: suppress when finalizing
+  background-color: map-get(v.$bg-colors2, primary);
 
+  button,
+  h1,
+  h2 {
+    font-family: 'Oleo Script', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #fff;
+  }
 
-	button,
-	h1,
-	h2 {
-		font-family: "Oleo Script", system-ui;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 30px;
-		color: #fff;
-	}
+  h3 {
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
 
-	h3 {
-		font-family: "Signika", sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 30px;
-	}
+  header,
+  footer {
+    background-color: map-get(v.$bg-colors2, tertiary);
+  }
 
-	header,
-	footer {
-		background-color: map-get(v.$bg-colors2, tertiary);
-	}
+  // stylizing buttons
+  .button {
+    font-family: 'Oleo Script', system-ui;
+    font-size: max(1.5vw, 30px);
+    padding: 15px 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 30px;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #000;
+    background-image: linear-gradient(
+      to right bottom,
+      #efb6b5,
+      #e19daf,
+      #ca86af,
+      #a775b3,
+      #756ab6
+    );
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &:hover {
+      background-position: right center;
+    }
+  }
+
+  // color shortcuts
+  .primary {
+    color: map-get(v.$bg-colors2, primary);
+  }
+
+  .secondary {
+    color: map-get(v.$bg-colors2, secondary);
+  }
+
+  .tertiary {
+    color: map-get(v.$bg-colors2, tertiary);
+  }
+
+  .quaternary {
+    color: map-get(v.$bg-colors2, quaternary);
+  }
+
+  .accent {
+    color: map-get(v.$bg-colors2, accent);
+  }
 }

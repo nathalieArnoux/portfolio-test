@@ -13,7 +13,7 @@ const DownloadPDFButton = () => {
   };
 
   return (
-    <button className="Resume-button" type="button" onClick={handleDownload}>
+    <button className="button" type="button" onClick={handleDownload}>
       Télécharger le pdf
     </button>
   );
@@ -23,13 +23,12 @@ const Resume = () => {
   return (
     <div className="Resume">
       <h2 className="Resume-title">
-        This is my <span className="Resume-title_accent">resume</span>!
+        This is my <span className="accent">resume</span>!
       </h2>
       <p className="Resume-text">
-        Feel free to <span className="Resume-text_accent">download</span> it if
-        need be.
+        Feel free to <span className="secondary">download</span> it if you want
       </p>
-      <p className="Resume-text_small">(Download link at the bottom)</p>
+      <p className="small">(Download link at the bottom)</p>
       <img
         className="Resume-img"
         src="src/assets/CV_Alternance_small.png"
