@@ -1,14 +1,42 @@
-@import 'src/styles/variables';
+@use 'src/styles/variables' as v;
 
 .Home {
   max-width: 100%;
-  margin: 0 auto;
 
-  @media screen and (min-width: $phone-bp) and (max-width: $tablet-bp) {
-    max-width: 85%;
+  //! test
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-img {
+    object-fit: cover;
+    width: 100%;
+    height: 84vh;
   }
 
-  @media screen and (min-width: $tablet-bp) {
-    max-width: 70%;
+  &-title {
+    position: absolute;
+    max-width: 80%;
+
+    &_hello,
+    &_sub {
+      margin-bottom: 3vh;
+    }
+
+    &_hello {
+      font-size: max(5vw, 65px);
+    }
+
+    &_star {
+      font-size: max(2.5vw, 50px);
+    }
+
+    &_intro {
+      font-size: max(2.5vw, 45px);
+      margin-bottom: 9vh;
+    }
   }
 }
