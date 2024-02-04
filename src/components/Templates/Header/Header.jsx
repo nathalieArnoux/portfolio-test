@@ -83,7 +83,7 @@ const Header = () => {
       <NavLink className="Header-logo" to="/">
         <img
           className="Header-logo_img"
-          src="src\assets\Logo-short2.png"
+          src="src\assets\logo-dev5.png"
           alt="Logo Lyndalis"
         />
       </NavLink>
