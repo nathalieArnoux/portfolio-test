@@ -29,6 +29,10 @@ const About = () => {
           Conclude with a call to action: Encourage visitors to explore your
           projects, resume, and get in touch.
         </li>
+        <li>
+          If you have received positive feedback from clients or collaborators,
+          you could include a section for testimonials.
+        </li>
       </ul>
     </div>
   );
