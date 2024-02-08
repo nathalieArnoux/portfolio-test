@@ -14,13 +14,9 @@ const About = () => {
             <p>
               Hello there! I&apos;m Nathalie, a junior web developer with a
               passion for crafting creative digital experiences. I have a
-              college diploma (licence) in natural languages but have recently
-              decided to start exploring the world of web development. Indeed,
-              since childhood, I&apos;ve been captivated by the seemingly
-              contrasting realms of technology and creativity. This fascination
-              has propelled me into the dynamic world of web development, where
-              creativity and technology intertwine to solve problems and create
-              new experiences for the users. And I love it!
+              college licence in languages (English & Japanese) but have
+              recently decided to reinvent myself and started exploring the
+              fabulous world of web development.
             </p>
           </div>
         </li>
@@ -141,12 +137,54 @@ const About = () => {
             Share your passion: Talk about what excites you most in web
             development and any particular areas of expertise.
           </h3>
+          <p>
+            From a young age, I&apos;ve been fascinated by the two seemingly
+            contrasting realms of technology and creativity. This fascination
+            has recently led me into the dynamic realm of web development, where
+            I find joy in blending creativity with technical prowess to solve
+            problems and craft captivating digital experiences. I&apos;m
+            particularly drawn to the expressive capabilities of React and CSS.
+            These technologies empower me to design attractive and intuitively
+            navigable user interfaces, providing users with seamless and
+            memorable interactions.
+          </p>
         </li>
         <li>
           <h3>
-            Discuss your experience: If you have relevant work or educational
-            experience, mention it here.
+            [Soft Skills] Discuss your experience: If you have relevant work or
+            educational experience, mention it here.
           </h3>
+          <p>
+            I hold a college degree in languages, specializing in English and
+            Japanese applied to business. This educational background has
+            equipped me with near-fluency in English and a nuanced understanding
+            of intercultural communication, enabling me to effectively
+            collaborate with diverse teams and clients. As part of my degree, I
+            completed a short internship at a news agency specialized in
+            Japanese news. Here, I gained valuable insights into search engine
+            optimization (SEO) and had the opportunity to apply the knowledge of
+            competitive intelligence and market research acquired during my
+            college years. This experience solidified the importance of
+            strategic thinking and data-driven decision-making in digital
+            marketing. My diverse professional experiences have underscored the
+            significance of effective communication, respect for hierarchy, and
+            the cultivation of teamwork. I thrive in collaborative environments,
+            leveraging collective strengths to achieve shared objectives. I
+            sincerely believe in the adage, &quot;If you want to go fast, go
+            alone. If you want to go far, go together.&quot; During my recent
+            web development training program, I was honored to be selected as
+            the class representative. I was commended by the program&apos;s
+            tutor for my role in fostering a cohesive and dynamic learning
+            environment, showcasing my dedication to supporting and encouraging
+            my peers. At the age of 26, I was offered the opportunity to undergo
+            managerial training, a testament to my seriousness and rapid
+            learning abilities. While I ultimately chose to pursue other paths,
+            this experience granted me insights into higher-level
+            decision-making processes. It equipped me with a deeper
+            understanding of leadership dynamics, delegation strategies, and
+            decision-making, enabling me to understand and respect managerial
+            decisions in a deeper way.
+          </p>
         </li>
         <li>
           <h3>
