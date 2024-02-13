@@ -1,17 +1,8 @@
 import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import './About.scss';
 
 import aboutData from './About_data';
-
-// const tabs = ['about', 'resume', 'projects', 'contact'];
-
-/* const sections = [
-  { name: 'Intro', hash: 'intro' },
-  { name: 'Skills', hash: 'skills' },
-  { name: 'Interest', hash: 'interest' },
-  { name: 'Soft Skills', hash: 'softSkills' },
-  { name: 'Values', hash: 'values' },
-]; */
 
 const ContentNav = () => {
   return (
@@ -34,7 +25,11 @@ const About = () => {
     <div className="About">
       <h2 className="About-title">About</h2>
       <ContentNav />
-      <img className="About-img" src="src\assets\old\Placeholder.png" alt="" />
+      <img
+        className="About-img"
+        src="src\assets\old\Placeholder.png"
+        alt="placeholder"
+      />
       <ul>
         {aboutData.map((section) => {
           return (
@@ -52,6 +47,14 @@ const About = () => {
         {/* Conclude with a call to action: Encourage visitors to explore your projects, resume, and get in touch.
         If you have received positive feedback from clients or collaborators, you could include a section for testimonials. */}
       </ul>
+      <div className="About-action">
+        <button className="button" type="button" to="/about">
+          Check resume
+        </button>
+        <button className="button" type="button" to="/about">
+          Browse projects
+        </button>
+      </div>
     </div>
   );
 };

@@ -15,4 +15,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &-action {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+  }
 }

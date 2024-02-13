@@ -21,9 +21,9 @@ const Home = () => {
           I&apos;m a <span className="accent">front-end developper</span> and
           this is my <span className="secondary"> portfolio</span>
         </h3>
-        <Link className="button" to="/about">
+        <button className="button" type="button" to="/about">
           Come visit!
-        </Link>
+        </button>
       </div>
     </div>
   );
