@@ -1,9 +1,24 @@
 .About {
   // pushes title down, ifuse margin-top, it also pushes main element down
-  padding-top: 20vh;
+  padding: 2vh 5vw;
 
   // flex
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &-img {
+    max-height: 20svh;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-action {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+  }
 }

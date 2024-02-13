@@ -39,7 +39,7 @@ body {
   // stylizing buttons
   .button {
     font-family: 'Oleo Script', system-ui;
-    font-size: max(1.5vw, 30px);
+    font-size: min(6.5vw, 30px);
     padding: 15px 30px;
     text-align: center;
     transition: 0.5s;

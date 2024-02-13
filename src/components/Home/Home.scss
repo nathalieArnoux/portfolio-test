@@ -3,6 +3,7 @@
 .Home {
   max-width: 100%;
 
+  //todo
   //! test
   position: relative;
   width: 100%;
@@ -20,6 +21,7 @@
   &-title {
     position: absolute;
     max-width: 80%;
+    max-height: 99vh;
 
     &_hello,
     &_sub {
@@ -27,15 +29,15 @@
     }
 
     &_hello {
-      font-size: max(5vw, 65px);
+      font-size: min(15vw, 65px);
     }
 
     &_star {
-      font-size: max(2.5vw, 50px);
+      font-size: min(12vw, 50px);
     }
 
     &_intro {
-      font-size: max(2.5vw, 45px);
+      font-size: min(10vw, 45px);
       margin-bottom: 9vh;
     }
   }
