@@ -1,11 +1,17 @@
+@use 'src/styles/variables' as v;
+
 .About {
-  // pushes title down, ifuse margin-top, it also pushes main element down
-  padding: 2vh 5vw;
+  // pushes title down, if use margin-top it also pushes main element down
+  padding-bottom: 2vh;
 
   // flex
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &-title {
+    padding-block: 1.5vh;
+  }
 
   &-img {
     max-height: 20svh;
@@ -14,11 +20,39 @@
   &-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: v.$header-size;
+    z-index: 100;
+    background-color: map-get(v.$bg-colors2, secondary);
+    width: 100vw;
+    height: 6.5vh;
+    padding-inline: 5vw;
+
+    .active {
+      font-weight: 500;
+      font-style: italic;
+    }
   }
+
+  &-content {
+    padding-inline: 5vw;
+
+    p {
+      padding-bottom: 1.5vh;
+      line-height: 1.1;
+    }
+  }
+
+&-call {
+      margin: 3vh 0 2.5vh 0;
+}
 
   &-action {
     display: flex;
     justify-content: center;
     gap: 5vw;
+
+    margin-inline: 5vw;
   }
 }
