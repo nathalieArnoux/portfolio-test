@@ -1,5 +1,5 @@
 import { HashLink } from 'react-router-hash-link';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './About.scss';
 
 import aboutData from './About_data';
@@ -61,12 +61,12 @@ const About = () => {
         <h2 className="About-call">Feeling curious?</h2>
       </div>
       <div className="About-action">
-        <button className="button" type="button" to="/about">
+        <Link className="button" to="/about">
           Check resume
-        </button>
-        <button className="button" type="button" to="/about">
+        </Link>
+        <Link className="button" to="/about">
           Browse projects
-        </button>
+        </Link>
       </div>
     </div>
   );
