@@ -1,18 +1,29 @@
-import { NavHashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { useLocation } from 'react-router-dom';
 import './About.scss';
 
 import aboutData from './About_data';
 
 const ContentNav = () => {
+  const { hash } = useLocation();
+  const scrollWithOffset = (el) =>
+    window.scrollTo({
+      top: el.getBoundingClientRect().top + window.scrollY - 90,
+      behavior: 'smooth',
+    });
   return (
     <ul className="About-nav">
       {aboutData.map((section) => {
+        const isActive = hash === `#${section.hash}`;
         return (
           <li key={section.hash}>
-            <NavHashLink to={`/about#${section.hash}`}>
+            <HashLink
+              to={`#${section.hash}`}
+              scroll={scrollWithOffset}
+              className={isActive ? 'active' : ''}
+            >
               {section.name}
-            </NavHashLink>
+            </HashLink>
           </li>
         );
       })}
@@ -30,7 +41,7 @@ const About = () => {
         src="src\assets\old\Placeholder.png"
         alt="placeholder"
       />
-      <ul>
+      <ul className="About-content">
         {aboutData.map((section) => {
           return (
             <li key={section.hash}>
@@ -44,9 +55,11 @@ const About = () => {
             </li>
           );
         })}
-        {/* Conclude with a call to action: Encourage visitors to explore your projects, resume, and get in touch.
-        If you have received positive feedback from clients or collaborators, you could include a section for testimonials. */}
+        {/* If you have received positive feedback from clients or collaborators, you could include a section for testimonials. */}
       </ul>
+      <div>
+        <h2 className="About-call">Feeling curious?</h2>
+      </div>
       <div className="About-action">
         <button className="button" type="button" to="/about">
           Check resume

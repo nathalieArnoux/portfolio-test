@@ -22,7 +22,7 @@ const aboutData = [
       {
         id: 'languages',
         tag: 'h4',
-        text: 'Languages, Libraries and Frameworks:',
+        text: 'Languages, Libraries and Frameworks',
       },
       {
         id: 'htmlCssJs',
@@ -52,7 +52,7 @@ const aboutData = [
       {
         id: 'tools',
         tag: 'h4',
-        text: 'Tools and Methodologies:',
+        text: 'Tools and Methodologies',
       },
       {
         id: 'gitGithub',
@@ -91,8 +91,9 @@ const aboutData = [
     hash: 'passion',
     content: [
       {
+        id: 'passion',
         tag: 'p',
-        text: "From a young age, I've been fascinated by the two seemingly contrasting realms of technology and creativity. This fascination has recently led me into the dynamic realm of web development, where I find joy in blending creativity with technical prowess to solve problems and craft captivating digital experiences. I'm particularly drawn to the expressive capabilities of React and CSS. These technologies empower me to design attractive and intuitively navigable user interfaces, providing users with seamless and memorable interactions.",
+        text: "From a young age, I've been fascinated by the two seemingly contrasting realms of technology and creativity. This fascination has recently led me into the dynamic realm of web development, where I find joy in blending creativity with technical prowess to solve problems and craft captivating digital experiences (UI/UX). I'm particularly drawn to the expressive capabilities of React and CSS. These technologies empower me to design attractive and intuitively navigable user interfaces, providing users with seamless and memorable interactions.",
       },
     ],
   },
@@ -101,8 +102,29 @@ const aboutData = [
     hash: 'softSkills',
     content: [
       {
+        id: 'degree',
         tag: 'p',
-        text: "I hold a college degree in languages,specializing in English and Japanese applied to business. This educational background has equipped me with near-fluency in English and a nuanced understanding of intercultural communication, enabling me to effectively collaborate with diverse teams and clients. As part of my degree, I completed a short internship at a news agency specialized in Japanese news. Here, I gained valuable insights into search engine optimization (SEO) and had the opportunity to apply the knowledge of competitive intelligence and market research acquired during my college years. This experience solidified the importance of strategic thinking and data-driven decision-making in digital marketing. My diverse professional experiences have underscored the significance of effective communication, respect for hierarchy, and the cultivation of teamwork. I thrive in collaborative environments, leveraging collective strengths to achieve shared objectives. I sincerely believe in the adage, 'If you want to go fast, go alone. If you want to go far, go together'. During my recent web development training program, I was honored to be selected as the class representative. I was commended by the program's tutor for my role in fostering a cohesive and dynamic learning environment, showcasing my dedication to supporting and encouraging my peers. At the age of 26, I was offered the opportunity to undergo managerial training, a testament to my seriousness and rapid learning abilities. While I ultimately chose to pursue other paths, this experience granted me insights into higher-level decision-making processes. It equipped me with a deeper understanding of leadership dynamics, delegation strategies, and decision-making, enabling me to understand and respect managerial decisions in a deeper way.",
+        text: 'I hold a college degree in languages, specializing in English and Japanese applied to business. This educational background has equipped me with near-fluency in English and a nuanced understanding of intercultural communication, enabling me to effectively collaborate with diverse teams and clients.',
+      },
+      {
+        id: 'internship',
+        tag: 'p',
+        text: 'As part of my degree, I completed a short internship at a news agency specialized in Japanese news. Here, I gained valuable insights into search engine optimization (SEO) and had the opportunity to apply the knowledge of competitive intelligence and market research acquired during my college years. This experience solidified the importance of strategic thinking and data-driven decision-making in digital marketing.',
+      },
+      {
+        id: 'career',
+        tag: 'p',
+        text: "My diverse professional experiences have underscored the significance of effective communication, respect for hierarchy, and the cultivation of teamwork. I thrive in collaborative environments, leveraging collective strengths to achieve shared objectives. I sincerely believe in the adage, 'If you want to go fast, go alone. If you want to go far, go together'.",
+      },
+      {
+        id: 'representative',
+        tag: 'p',
+        text: "During my recent web development training program, I was honored to be selected as the class representative. I was commended by the program's tutor for my role in fostering a cohesive and dynamic learning environment, showcasing my dedication to supporting and encouraging my peers.",
+      },
+      {
+        id: 'manager',
+        tag: 'p',
+        text: 'At the age of 26, I was offered the opportunity to undergo managerial training, a testament to my seriousness and rapid learning abilities. While I ultimately chose to pursue other paths, this experience granted me insights into higher-level decision-making processes. It equipped me with a deeper understanding of leadership dynamics, delegation strategies, and decision-making, enabling me to understand and respect managerial decisions in a deeper way.',
       },
     ],
   },
@@ -111,8 +133,19 @@ const aboutData = [
     hash: 'values',
     content: [
       {
+        id: 'users',
         tag: 'p',
-        text: 'Showcase your values: Share your approach to web development, your work ethic, and any principles that guide your work.',
+        text: 'User-Centered Design: A website is first and foremost a service provided to its users, so it should be designed with users in mind.',
+      },
+      {
+        id: 'responsiveness',
+        tag: 'p',
+        text: 'Responsiveness: In a world where the ever-advancing technology rests at the bottom of your pocket, no website should be incompatible with different supports.',
+      },
+      {
+        id: 'learning',
+        tag: 'p',
+        text: 'Continuous Learning: The field of web development is a fast-paced race, and staying up to date requires serious and regular practice.',
       },
     ],
   },
