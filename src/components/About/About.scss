@@ -1,33 +1,82 @@
 @use 'src/styles/variables' as v;
 
+//! temporary
+main {
+  background-image: url("src/assets/banner2.png");
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .About {
   // pushes title down, if use margin-top it also pushes main element down
   padding-bottom: 2vh;
+  padding-inline: 5vw;
+  background-color: map-get(v.$bg-colors2, primary);
+
+  @media (width >= v.$tablet-bp) {
+    width: v.$tablet-width;
+    margin-inline: auto;
+  }
+
+  @media (width >= v.$desktop-bp) {
+    width: v.$desktop-width;
+    margin-inline: auto;
+  }
 
   // flex
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   &-title {
     padding-block: 1.5vh;
-  }
 
-  &-img {
-    max-height: 20svh;
+    @media (width >= v.$desktop-bp) {
+      padding-block: 4vh;
+    }
   }
 
   &-nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     position: sticky;
     top: v.$header-size;
-    z-index: 100;
+    z-index: 10;
     background-color: map-get(v.$bg-colors2, secondary);
-    width: 100vw;
+    width: v.$phone-width;
     height: 6.5vh;
-    padding-inline: 5vw;
+    font-size: min(5vw, 25px);
+
+    @media (width >= v.$tablet-bp) {
+      width: v.$tablet-width;
+    }
+
+    //! work needed
+    @media (width >= v.$desktop-bp) {
+      // positionning
+      position: fixed;
+      right: 0;
+      top: calc((100vh - v.$header-size) / 3.1);
+      
+      // designing
+      flex-direction: column;
+      width: calc((100vw - v.$desktop-width) / 2);
+      height: calc((100vh - v.$header-size) / 2);
+
+      &_desktop-bg {
+        position: fixed;
+        right: 0;
+        top: v.$header-size;
+        width: calc((100vw - v.$desktop-width) / 2);
+        height: calc(100vh - v.$header-size);
+        background-size: cover;
+        background-image: url("src/assets/banner2.png");
+      }
+    }
 
     .active {
       font-weight: 500;
@@ -35,18 +84,48 @@
     }
   }
 
+  &-img {
+    width: v.$phone-width;
+
+    //! fine tuning needed
+    // height: 20svh;
+
+    @media (width >= v.$tablet-bp) {
+      width: v.$tablet-width;
+    }
+
+    @media (width >= v.$desktop-bp) {
+      width: v.$desktop-width;
+      position: fixed;
+      top: v.$header-size;
+      left: 0;
+      width: calc((100vw - v.$desktop-width) / 2);
+      height: calc(100vh - v.$header-size);
+      object-fit: cover;
+    }
+  }
+
   &-content {
-    padding-inline: 5vw;
+    text-align: justify;
+
+    h3 {
+      padding-left: 60px;
+    }
+
+    h4 {
+      padding-left: 40px;
+    }
 
     p {
       padding-bottom: 1.5vh;
       line-height: 1.1;
+      text-indent: 20px;
     }
   }
 
-&-call {
-      margin: 3vh 0 2.5vh 0;
-}
+  &-call {
+    margin: 3vh 0 2.5vh 0;
+  }
 
   &-action {
     display: flex;

@@ -1,5 +1,7 @@
 import { HashLink } from 'react-router-hash-link';
 import { Link, useLocation } from 'react-router-dom';
+import { isDesktop } from 'react-device-detect';
+
 import './About.scss';
 
 import aboutData from './About_data';
@@ -8,26 +10,29 @@ const ContentNav = () => {
   const { hash } = useLocation();
   const scrollWithOffset = (el) =>
     window.scrollTo({
-      top: el.getBoundingClientRect().top + window.scrollY - 90,
+      top: el.getBoundingClientRect().top + window.scrollY - 160,
       behavior: 'smooth',
     });
   return (
-    <ul className="About-nav">
-      {aboutData.map((section) => {
-        const isActive = hash === `#${section.hash}`;
-        return (
-          <li key={section.hash}>
-            <HashLink
-              to={`#${section.hash}`}
-              scroll={scrollWithOffset}
-              className={isActive ? 'active' : ''}
-            >
-              {section.name}
-            </HashLink>
-          </li>
-        );
-      })}
-    </ul>
+    <>
+      {isDesktop && <div className="About-nav_desktop-bg" />}
+      <ul className="About-nav">
+        {aboutData.map((section) => {
+          const isActive = hash === `#${section.hash}`;
+          return (
+            <li key={section.hash}>
+              <HashLink
+                to={`#${section.hash}`}
+                scroll={scrollWithOffset}
+                className={isActive ? 'active' : ''}
+              >
+                {section.name}
+              </HashLink>
+            </li>
+          );
+        })}
+      </ul>
+    </>
   );
 };
 
@@ -38,7 +43,7 @@ const About = () => {
       <ContentNav />
       <img
         className="About-img"
-        src="src\assets\old\Placeholder.png"
+        src="src\assets\old\banner1.png"
         alt="placeholder"
       />
       <ul className="About-content">
@@ -61,10 +66,10 @@ const About = () => {
         <h2 className="About-call">Feeling curious?</h2>
       </div>
       <div className="About-action">
-        <Link className="button" to="/about">
+        <Link className="button" to="/resume">
           Check resume
         </Link>
-        <Link className="button" to="/about">
+        <Link className="button" to="/projects">
           Browse projects
         </Link>
       </div>
